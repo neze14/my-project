@@ -30,13 +30,6 @@ const Email = () => { // This line sets the function Email as a constant which c
         }
     }
 
-    const HideQR = () => {
-        if (hide === "") {
-            setHide("")
-        }
-    }
-
-
     return (
         <div>
             {/**For Email */}

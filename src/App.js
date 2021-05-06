@@ -10,7 +10,7 @@ const App = () => { // creates the constant variable, App
     <div className = "Container">
       <div className="Column1">
         <Email />
-        <button class="button is-info is-rounded" >Refresh</button>
+        <button class="button is-info is-rounded" >Refresh</button> 
       </div>
 
       <div className="Column2">
