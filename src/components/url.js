@@ -1,10 +1,10 @@
 import React, { useState } from 'react'; // This line imports React and useState from  react for use in the codes below
 
-const URL = () => {
+const URL = () => { // This line sets the function URL as a constant which can be used. In this case it is exported for use in App.js
     const QRCode = require('qrcode.react'); 
 
-    const [url, setUrl] = useState(''); // Declares a new state varuable called 'url'. This adds React state to the function's components.
-    const [hide, setHide] = useState('no'); // Declares a new state varuable called 'hide'.
+    const [url, setUrl] = useState(''); // Declares a new state variable called 'url'. This adds React state to the function's components.
+    const [hide, setHide] = useState('no'); // Declares a new state variable called 'hide'.
 
     // This function sets url to display the value as it is being typed.
     const ShowURL = (event) => { 

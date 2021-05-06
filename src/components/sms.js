@@ -1,11 +1,11 @@
 import React, { useState } from 'react'; // This line imports React and useState from  react for use in the codes below
 
-const SMS = () => { // This line sets the function Email as a constant which can be used. In this case it is exported for use in App.js
+const SMS = () => { // This line sets the function SMS as a constant which can be used. In this case it is exported for use in App.js
     const QRCode = require('qrcode.react'); 
 
-    const [num, setNum] = useState(''); // Declares a new state varuable called 'num'. This adds React state to the function's components.
-    const [message, setMessage] = useState(''); // Declares a new state varuable called 'message'.
-    const [hide, setHide] = useState('no'); // Declares a new state varuable called 'hide'.
+    const [num, setNum] = useState(''); // Declares a new state variable called 'num'. This adds React state to the function's components.
+    const [message, setMessage] = useState(''); // Declares a new state variable called 'message'.
+    const [hide, setHide] = useState('no'); // Declares a new state variable called 'hide'.
 
     // This function sets mail to display the value as it is being typed.
     const ShowNum = (event) => {
