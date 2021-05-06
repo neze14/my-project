@@ -33,12 +33,15 @@ const Email = () => { // This line sets the function Email as a constant which c
     return (
         <div>
             {/**For Email */}
+
+            {/**This give the component a style when called in App.ts */}
             <div class="tile is-parent" >
                 <article class="tile is-child notification is-info has-background-danger-dark">
                     <p class="title">Email Generator</p>
                     <p class="subtitle">...create your own!</p>
                     <figure class="image is-3by3">
                         <div >
+                            {/** This sets the qr code to display with the colour black */}
                             <QRCode hidden={hide} value={`mailto:${mail}?subject=${subject}&body=${body}.`} size={256} />
                         </div>
                     </figure>
@@ -64,6 +67,7 @@ const Email = () => { // This line sets the function Email as a constant which c
                         </div>
                     </div>
 
+                    {/** This button shows the QR code that has been generated */}
                     <div>
                         <button class="button is-info is-rounded" onClick={GenerateCode}> Generate </button> 
                     </div>

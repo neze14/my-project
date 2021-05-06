@@ -28,12 +28,14 @@ const SMS = () => { // This line sets the function Email as a constant which can
         <div>
             {/**For SMS */}
 
+            {/**This give the component a style when called in App.ts */}
             <div class="tile is-parent">
                 <article class="tile is-child notification is-info has-background-danger-dark">
                     <p class="title">SMS Generator</p>
                     <p class="subtitle">...create your own!</p>
                     <figure class="image is-3by3">
                         <div>
+                            {/** This sets the qr code to display with the colour black */}
                             <QRCode hidden={hide} value={`SMS:${num}:${message}`} size={256} />
                         </div>
                     </figure>
@@ -52,6 +54,7 @@ const SMS = () => { // This line sets the function Email as a constant which can
                         </div>
                     </div>
 
+                    {/** This button shows the QR code that has been generated */}
                     <div>
                         <button class="button is-info is-rounded" onClick={GenerateCode}> Generate </button>
                     </div>

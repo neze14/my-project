@@ -22,16 +22,19 @@ const URL = () => {
         <div>
             {/**For URL */}
 
+            {/**This give the component a style when called in App.ts */}
             <div class="tile is-parent">
                 <article class="tile is-child notification is-info has-background-danger-dark">
                     <p class="title">URL Generator</p>
                     <p class="subtitle">...create your own!</p>
                     <figure class="image is-3by3">
                         <div>
+                            {/** This sets the qr code to display with the colour black */}
                             <QRCode hidden={hide} value={url} size={256} fgColor="black" />
                         </div>
                     </figure>
 
+                    {/** This sets the qr code to display with the colour black */}
                     <div className="field">
                         <label className="label">URL</label>
                         <div className="control">
@@ -39,6 +42,7 @@ const URL = () => {
                         </div>
                     </div>
 
+                    {/** This button shows the QR code that has been generated */}
                     <div>
                         <button class="button is-info is-rounded" onClick={GenerateCode}> Generate </button>
                     </div>
